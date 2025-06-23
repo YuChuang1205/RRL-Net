@@ -55,18 +55,24 @@ Existing methods focus on extracting diverse feature relations and ignore indivi
     pip install scikit-learn==0.24.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
    ```
 4. Training the model.  
-   
-    The default model and dataset are the **RRL-Net** and the **VIS-NIR patch dataset**. You can modify the default setting in the code directly.<br>
+   * **Choose 1:**
     ```
-    python train_model.py
+    python train_model_new.py  --learning_rate 2e-4  --batch_size 64  --epochs 40  --dataset 'VIS-NIR'  --model 'RRL'
     ```
-    
-6. Testing the Model.  
+   * **Choose 2:**
+    ```
+    python train_model.py   ## The default model and dataset are the **RRL-Net** and the **VIS-NIR patch dataset**. You can modify the default setting directly.
+    ```
+
+5. Testing the Model.  
      
-    The default model and dataset are the **RRL-Net** and the **VIS-NIR patch dataset**. You can modify the default setting in the code directly.<br>
-    
+    * **Choose 1:**
     ```
-    python test_model.py
+    python test_model_new.py  --batch_size 64  --dataset 'VIS-NIR'  --model 'RRL'
+    ```
+    * **Choose 2:**
+    ```
+    python test_model.py  ## The default model and dataset are the **RRL-Net** and the **VIS-NIR patch dataset**. You can modify the default setting directly.
     ```
 
 ## Results
