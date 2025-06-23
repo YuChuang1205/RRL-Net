@@ -55,7 +55,7 @@ Existing methods focus on extracting diverse feature relations and ignore indivi
     pip install scikit-learn==0.24.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
    ```
 4. Training the model.  
-   * **Choose 1:**
+   * **Choose 1:**  **--dataset** in ['VIS-NIR', 'OS', 'SEN1-2']; **--model** in ['SCFDM', 'AFD', 'MFD', 'EFR', 'FIL', 'RRL']
     ```
     python train_model_new.py  --learning_rate 2e-4  --batch_size 64  --epochs 40  --dataset 'VIS-NIR'  --model 'RRL'
     ```
@@ -66,7 +66,7 @@ Existing methods focus on extracting diverse feature relations and ignore indivi
 
 5. Testing the Model.  
      
-    * **Choose 1:**
+    * **Choose 1:**  **--dataset** in ['VIS-NIR', 'OS', 'SEN1-2']; **--model** in ['SCFDM', 'AFD', 'MFD', 'EFR', 'FIL', 'RRL']
     ```
     python test_model_new.py  --batch_size 64  --dataset 'VIS-NIR'  --model 'RRL'
     ```
